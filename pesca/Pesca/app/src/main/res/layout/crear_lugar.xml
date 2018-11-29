@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Nombre del Lugar"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/carnada"
+        app:layout_constraintStart_toStartOf="@+id/carnada" />
+
+    <EditText
+        android:id="@+id/carnada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="Latitud"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/epoca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/epoca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Longitud"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCargar"
+        app:layout_constraintStart_toStartOf="@+id/carnada" />
+
+    <Button
+        android:id="@+id/buttonCargar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Cargar Lugar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVolver"
+        app:layout_constraintStart_toStartOf="@+id/buttonVolver" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
